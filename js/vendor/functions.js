@@ -1,0 +1,5 @@
+$(function() {
+	
+	$(".side-nav").tinyNav();
+
+});

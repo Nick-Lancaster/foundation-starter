@@ -1,0 +1,187 @@
+
+// Bourbon Mixin Library
+@import "bourbon";
+@import "neat";
+
+// Global Foundation Settings
+//@import "foundation/variables";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+//
+
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+/*
+----- contents ----- 
+01 colours
+02 fonts
+03 html & body
+04 typography
+05 typographical elements
+06 lists
+07 links
+08 images
+09 layout
+10 forms
+11 tables
+12 media queries
+13 helper classes 
+-------------------- */
+
+/*
+----- 01 colours ----- */
+$neutral: #ffffff;
+$dark: #000000;
+$highlight: fuchsia;
+
+/*
+----- 02 fonts ----- */
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$sans: sans-serif;
+$serif: serif;
+
+/*
+----- 03 html & body ----- */
+html {
+	background-color: $neutral;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: $neutral;
+	color: $dark;
+	width: 100%;
+}
+
+/*
+----- 04 typography ----- */
+
+/*
+----- 05 typographical elements ----- */
+small {
+	font-size: em-calc(13);
+}
+
+/*
+----- 06 lists ----- */
+.tinynav { display: block }
+ul.side-nav { display: none }
+
+/*
+----- 07 links ----- */
+a {
+
+	&:hover {
+		@include transition-property (color);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+	}
+}
+
+/*
+----- 08 images ----- */
+
+/*
+----- 09 layout ----- */
+
+/*
+----- 10 forms ----- */
+
+/*
+----- 11 tables ----- */
+
+/*
+----- 12 media queries ----- */
+@media all and (min-width: em-calc(768)) {
+
+	.tinynav { display: none }
+	ul.side-nav { display: block }
+
+}
+
+/*
+----- 13 helpers classes ----- */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { 
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: 
+	absolute; 
+	width: 1px; 
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:focus { 
+	clip: auto; 
+	height: auto; 
+	margin: 0; 
+	overflow: visible; 
+	position: static; 
+	width: auto; 
+}
+
+svg:not(:root) { 
+	overflow: hidden; 
+}
+
+/* webkit, opera, IE9 */
+::selection { background: $highlight; }
+/* mozilla firefox */
+::-moz-selection { background: $highlight; }

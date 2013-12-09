@@ -255,6 +255,8 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/foundation_starter/index.html",
+		"/Applications/MAMP/htdocs/foundation_starter/js/jquery.js",
 		"/Applications/MAMP/htdocs/sharee_marshall_ls/themes/sharee_marshall/partials/form;newsletter_signup.htm",
 		"/Applications/MAMP/htdocs/sharee_marshall_ls/themes/sharee_marshall/pages/gentlemen/pre_action.php",
 		"/Applications/MAMP/htdocs/sharee_marshall_ls/themes/sharee_marshall/partials/layout;header.htm",
@@ -380,9 +382,7 @@
 		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/partials/shop;product_list_home.htm",
 		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/blog/page_blog.htm",
 		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/category/block_breadcrumbs.htm",
-		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/cart/block_breadcrumbs.htm",
-		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/product/block_breadcrumbs.htm",
-		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/profile/block_breadcrumbs.htm"
+		"/Applications/MAMP/htdocs/designinn_ls/themes/design_inn/pages/cart/block_breadcrumbs.htm"
 	],
 	"find":
 	{
